@@ -1,0 +1,70 @@
+﻿@model pfeProject2020.Models.SsmsInstances
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+
+<div class="content-wrapper" style="min-height: 1907.88px;">
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Liste des Instances</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="Home">Acceuil</a></li>
+                    <li class="breadcrumb-item active">Instances</li>
+                   
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+
+                <h2>Delete</h2>
+
+                <h3>Are you sure you want to delete this?</h3>
+                <div>
+                    <h4>SsmsInstances</h4>
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Title)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Title)
+                        </dd>
+                    </dl>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="submit" value="Delete" class="btn btn-default" /> |
+                        <a asp-action="Index">Back to List</a>
+                    </form>
+                </div>
+
+
+
+
+
+
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+
+</section>
+<!-- /.content -->
+</div>

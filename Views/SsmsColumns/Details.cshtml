@@ -1,0 +1,81 @@
+﻿@model pfeProject2020.Models.SsmsColumn
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+
+
+<div class="content-wrapper" style="min-height: 1907.88px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Liste des Colonnes</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="Home">Acceuil</a></li>
+                        <li class="breadcrumb-item active">Bases de  Données</li>
+                        <li class="breadcrumb-item active">Tables</li>
+                        <li class="breadcrumb-item active">Colonnes</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <h2>Details</h2>
+
+                    <div>
+                        <h4>SsmsColumn</h4>
+                        <hr />
+                        <dl class="dl-horizontal">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Title)
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.Title)
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.TableName)
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.TableName)
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.IdTabNavigation)
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.IdTabNavigation.Id)
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+                        <a asp-action="Index">Back to List</a>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+
+    </section>
+    <!-- /.content -->
+</div>
