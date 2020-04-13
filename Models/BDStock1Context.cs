@@ -76,6 +76,12 @@ namespace pfeProject2020.Models
                     .WithMany(p => p.SsmsDatabases)
                     .HasForeignKey(d => d.IdInstances)
                     .HasConstraintName("FK_SSMS__Databases_SSMS__Instances");
+
+
+
+                
+               
+
             });
 
             modelBuilder.Entity<SsmsDbroles>(entity =>

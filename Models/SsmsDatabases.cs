@@ -14,7 +14,8 @@ namespace pfeProject2020.Models
         public Guid Id { get; set; }
         public string Title { get; set; }
         public string InstanceName { get; set; }
-        public Guid? IdInstances { get; set; }
+        // public Guid? IdInstances { get; set; }
+        public Guid IdInstances { get; set; }
 
         public SsmsInstances IdInstancesNavigation { get; set; }
         public ICollection<SsmsProcedures> SsmsProcedures { get; set; }
